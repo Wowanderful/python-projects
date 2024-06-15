@@ -1,7 +1,7 @@
 import random 
 
-new_game = "д"
-print("Добро пожаловать в числовую угадайку")
+new_game = "y"
+print("Welcome to Hidden number game!")
 
 def isvalid(n): 
     if n >= 1 and n <= 100:
@@ -10,29 +10,29 @@ def isvalid(n):
         return False
 
 
-while new_game == 'д':
-    print('Введите максимальное натуральное число которое мы можем загадать: ')
+while new_game == 'y':
+    print('Please type the maximum number that we can use: ')
     upper = int(input())
     number = random.randint(1, upper)
     attempts = 0
     while True:
-        print('Введите число от 1 до', upper, ': ')
+        print('Print number from 1 to ', upper, ': ')
         n = input()
         nu = int(n)      
         if isvalid(nu): 
             attempts += 1          
             if nu < number: 
-                print("Ваше число меньше загаданного, попробуйте еще разок")
+                print("Your number is less than the hidden number. Please try again ")
             elif nu > number: 
-                print("Ваше число больше загаданного, попробуйте еще разок")
+                print("Your number is more than the hidden number. Please try again ")
             elif nu == number:
-                print("Вы угадали, поздравляем!")
-                print("Количество попыток: ", attempts)
+                print("You won!")
+                print("Number of attempts: ", attempts)
                 break
         else: 
-            print("А может быть все-таки введем целое число от 1 до", upper, "?")
-    print('Если хотите сыграть еще раз напишите "д"')
+            print("May be you will write a natural number from 1 to ", upper, "?")
+    print('If you want to play again, type "y"')
     new_game = input()
         
 
-print("Спасибо, что играли в числовую угадайку. Еще увидимся...")
+print("Thank you for playing 'Hidden number'. See you soon")
