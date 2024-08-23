@@ -1,3 +1,7 @@
+# CRYSTAL BALL 
+# Want to know your fortune? Ask this program anything you want and get your forecast. 
+# Run the program and see the terminal
+
 import random
 new_game = 'y'
 answers = ["Absolutely",
