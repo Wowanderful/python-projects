@@ -1,3 +1,7 @@
+# THE GAME "HIDDEN NUMBER"
+# The program hides the number up to 100. Try guessing it in 7 attempts. 
+# Run the program and see the terminal
+
 import random 
 
 new_game = "y"
