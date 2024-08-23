@@ -1,3 +1,6 @@
+# PASSWORD GENERATOR 
+# Run the program and look at the terminal to start 
+
 import random
 
 digits = '0123456789' 
