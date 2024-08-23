@@ -1,3 +1,7 @@
+# THE GAME "HANGMAN"
+# Try guessing the word before you get hanged. 
+# Run the program and see the terminal
+
 import random
 
 words_list = ["human", "word", "face", "door", "earth", "work", "children", "history", "woman",
